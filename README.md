@@ -76,3 +76,5 @@ Desenvolver páginas seguindo um modelo de design e obter dados a partir de uma 
 ## Submissão
 - [ ] Crie um fork do teste para acompanharmos o seu desenvolvimento através dos seus commits.
 - [ ] Recomendamos a criação de pull request para cada tarefa, mantendo a master apenas com versões estáveis..
+
+
