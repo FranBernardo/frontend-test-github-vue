@@ -22,7 +22,7 @@
             v-model="group"
           >
             <v-list-item class="group">
-            <router-link to="/home" class="links"
+            <router-link to="/" class="links"
               >
                 <v-list-item-title>Home</v-list-item-title>
                 </router-link>
@@ -68,7 +68,7 @@ export default defineComponent({
 </script>
 <style scoped>
 .main {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 .links {

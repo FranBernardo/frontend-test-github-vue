@@ -27,8 +27,8 @@ Desenvolver páginas seguindo um modelo de design e obter dados a partir de uma 
 
 ### 1. Desenvolva o esqueleto da aplicação
 
-- [ ] Desenvolva o cabeçalho, sidebar e área de conteúdo .
-- [ ] Crie a estrutura de abas e faça a navegação entre elas.
+- [x] Desenvolva o cabeçalho, sidebar e área de conteúdo .
+- [x] Crie a estrutura de abas e faça a navegação entre elas.
 
 ### 2. Implementando pesquisa
 
