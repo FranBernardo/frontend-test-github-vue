@@ -1,4 +1,10 @@
 export default interface ICommits {
-    nome: string,
-    url: string
+    commit:{
+        author: {
+            name: string,
+            email: string,
+            date: Date
+        },
+        message: string
+    },
 }

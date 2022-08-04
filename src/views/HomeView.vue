@@ -41,9 +41,7 @@ export default defineComponent({
     BuscaRepo(payload: string) {
       api.get(payload).then((response) => {
         this.repositorios = response.data.items;
-        console.log(this.repositorios)
         this.isText = false
-        
       });
     },
   },
