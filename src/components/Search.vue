@@ -31,8 +31,7 @@ export default defineComponent({
     
     methods: {
         teste() {
-            this.$emit("buscar", this.repositorio)
-            this.repositorio = "";
+            this.$emit("buscar", this.repositorio) 
         }
     }
 })
@@ -43,7 +42,7 @@ width: 400px;
 display: flex;
 right: 0;
 float: right;
-
+color:#FBF5F3
 }
 .btn{
   color: white !important;

@@ -72,8 +72,6 @@ export default defineComponent({
   },
   methods: {
     SeeCommits(){
-      console.log('remover', this.repositorio.commits_url.slice(0, -6))
-      
       this.store.commit('COMMITS', this.repositorio.commits_url.slice(0, -6))
       this.$router.push('/about')
     }

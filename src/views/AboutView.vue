@@ -59,7 +59,6 @@ export default defineComponent({
       .get(store.state.urlCommits)
       .then((response) => {
         this.info = response.data
-        console.log(this.info)
       })
       
   }
