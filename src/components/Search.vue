@@ -7,6 +7,7 @@
         hide-details="auto"
         placeholder="Search"
         required
+        
       ></v-text-field>
       <v-btn @click="teste" color="blue-grey" class="ma-3 btn"  justify="center">Search <v-icon> mdi-magnify</v-icon></v-btn>
     </v-row>
@@ -42,7 +43,8 @@ width: 400px;
 display: flex;
 right: 0;
 float: right;
-color:#FBF5F3
+color: #000;;
+background: #FBF5F3 !important;
 }
 .btn{
   color: white !important;
