@@ -1,7 +1,7 @@
 <template>
   <search @buscar="BuscaRepo"></search>
-  <div v-if="isText">
-    <p>Busco o repositorio do git</p>
+  <div v-if="isText" class="mt-16">
+    <texto :texto="texto"/>
   </div>
 
   <div v-else>
@@ -34,21 +34,23 @@ import { defineComponent } from "vue";
 import api from "@/services/api";
 import IRepositorio from "../interface/IRepositorio";
 import Search from "@/components/Search.vue";
+import Texto from "../components/Texto.vue"
 import Repositorios from "../components/Repositorios.vue";
 
 export default defineComponent({
-  name: "HomeView",
+  name: "BuscaView",
 
-  components: { Search, Repositorios },
+  components: { Search, Repositorios, Texto },
   data() {
     return {
       repositorios: [] as IRepositorio[],
       isText: true,
       totalPage: 0,
       offset: 0,
-      limit: 2,
+      limit: 5,
       page: 1,
       nomeRepositorio: "",
+      texto: "Busco o repositorio do git"
     };
   },
   computed: {
@@ -69,7 +71,7 @@ export default defineComponent({
         .get(`${payload}&page=${this.page}&per_page=${this.limit}`)
         .then((response) => {
           this.totalPage = response.data.total_count / this.limit;
-
+          console.log(response.data.items)
           this.repositorios = response.data.items;
           this.isText = false;
         });
@@ -92,6 +94,6 @@ h1 {
   color: aliceblue;
 }
 .pages {
-  background: #8daa9d;
+  color: #8daa9d;
 }
 </style>
