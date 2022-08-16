@@ -28,7 +28,7 @@
             <v-divider></v-divider>
             <v-card-text > <span class="text-bold mr-13">{{ repositorio.language }}</span> <span>{{Dataformatada}}</span> </v-card-text> 
             <v-card-text > </v-card-text> 
-            <v-btn @click.prevent="bookDialog">commits</v-btn>
+            <v-btn @click.prevent="SeeCommits">commits</v-btn>
               
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -43,7 +43,7 @@ import { useStore } from "@/store";
 import {  PropType } from "vue";
 import { defineComponent } from "vue"
 import moment from 'moment';
-import ModalTeste from "./ModalTeste.vue"
+import ModalTeste from "./Commit.vue"
 
 export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names

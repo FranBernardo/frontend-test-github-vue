@@ -1,5 +1,5 @@
 export default interface ICommits {
-    commit:{
+    commit: {
         author: {
             name: string,
             email: string,

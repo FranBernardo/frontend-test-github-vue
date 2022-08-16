@@ -1,9 +1,11 @@
 <template>
   <div class="about">
-    <h1>{{ url }}</h1>
+    <!-- <commit v-for="(info, index) in infos"
+      :key="index" :info="info"/> -->
+      <h1>{{ url }}</h1>
     <!-- <p>{{info}}</p> -->
     <div
-     v-for="(currency, index) in info"
+     v-for="(currency, index) in infos"
       :key="index"
       class="currency">
       <v-card
@@ -46,21 +48,24 @@ import { store } from "@/store";
 import axios from "axios";
 import ICommits from '@/interface/ICommits'
 import { defineComponent } from "vue";
+
+
 export default defineComponent({
-  name: 'AboutView',
-  data(){
-    return {
-      url : '',
-      info: [] as ICommits[],
-    }
-  },
-  mounted () {
-    axios
-      .get(store.state.urlCommits)
-      .then((response) => {
-        this.info = response.data
-      })
-      
-  }
+    name: "AboutView",
+    components: {  },
+    data() {
+        return {
+            url: "",
+            infos: [] as ICommits[],
+        };
+    },
+    mounted() {
+        axios
+            .get(store.state.urlCommits)
+            .then((response) => {
+            this.infos = response.data;
+        });
+    },
+    
 })
 </script>

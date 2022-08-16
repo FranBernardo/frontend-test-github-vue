@@ -32,11 +32,11 @@ Desenvolver páginas seguindo um modelo de design e obter dados a partir de uma 
 
 ### 2. Implementando pesquisa
 
-- [ ] Implemente o campo de pesquisa para que o usuário busque por um repositório. O dashboard funcionará a partir do repositório pesquisado. Repositórios sugeridos: react, vue.
+- [x] Implemente o campo de pesquisa para que o usuário busque por um repositório. O dashboard funcionará a partir do repositório pesquisado. Repositórios sugeridos: react, vue.
 
 ### 3. Conectar à API do Github
 
-- [ ] Conecte à API do Github e liste os commits do repositório pesquisado.
+- [x] Conecte à API do Github e liste os commits do repositório pesquisado.
 - [ ] Listar os commits em uma tabela, dispondo as informações de acordo com o documento.
 
 ### 4. Implementando gráficos na aba Commits
