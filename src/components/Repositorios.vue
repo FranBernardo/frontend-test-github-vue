@@ -1,6 +1,5 @@
 <template>
   <v-container fluid class="mt-15">
-  <ModalTeste :dialog="openDialog" @close="close" :propPackage="propPackage"/>
     <v-row justify="center">
 
       <v-expansion-panels>
@@ -43,12 +42,12 @@ import { useStore } from "@/store";
 import {  PropType } from "vue";
 import { defineComponent } from "vue"
 import moment from 'moment';
-import ModalTeste from "./Commit.vue"
+
 
 export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names
     name: "Repositorio",
-    components: { ModalTeste},
+
     props: {
         repositorio: {
             type: Object as PropType<IRepositorio>,
